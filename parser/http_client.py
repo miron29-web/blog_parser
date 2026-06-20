@@ -17,6 +17,7 @@ class HttpClient:
     async def fetch(self, url):
         try:
             async with self._session.get(url) as resp:
+                print(f"status={resp.status} url={url}")
                 if resp.status == 200:
                     html = await resp.text()
                     return html
