@@ -1,1 +1,1 @@
-DATABASE_PATH = './database/sqlite.db'
+DATABASE_PATH = './top_academy_blog.db'
